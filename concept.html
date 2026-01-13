@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Concept — Murosync</title>
+  <meta name="description" content="Why timing is a system parameter. Emergent synchronization perspective." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <div class="brand">
+        <a class="logo" href="/">Murosync</a>
+        <nav class="nav">
+          <a href="/concept.html">Concept</a>
+          <a href="/research-platform.html">Research Platform</a>
+          <a href="/hardware-architecture.html">Hardware</a>
+          <a href="/applications.html">Applications</a>
+          <a href="/research-notes/">Research Notes</a>
+          <a href="/status.html">Status</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Concept</h1>
+
+      <h2>Timing as a system parameter</h2>
+      <p>
+        Time is often treated as background infrastructure — assumed to be “good enough” once clocks are distributed.
+        In large distributed systems this assumption breaks down.
+      </p>
+      <p>
+        Timing quality directly affects correlation, stability, reproducibility, and the physical meaning of measured events.
+        Phase errors, asymmetries, and non-deterministic delays accumulate into system-level behavior that cannot be fixed locally.
+      </p>
+      <p>
+        Murosync treats time and phase as <strong>first-class system parameters</strong>, subject to measurement, control,
+        and architectural trade-offs.
+      </p>
+
+      <h2>Emergent synchronization</h2>
+      <p>
+        The conceptual inspiration behind Murosync comes from emergent synchronization phenomena:
+        global coherence arising from local interactions rather than centralized control.
+      </p>
+      <ul>
+        <li>distributed nodes with local timing awareness</li>
+        <li>measurement-driven alignment loops</li>
+        <li>system-level validation rather than isolated optimization</li>
+      </ul>
+
+      <div class="footer">
+        Murosync is research-first: it documents experiments and the constraints discovered along the way.
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

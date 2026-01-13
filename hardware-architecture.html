@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hardware Architecture — Murosync</title>
+  <meta name="description" content="Conceptual hardware roles and a modular rack-mounted architecture." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <div class="brand">
+        <a class="logo" href="/">Murosync</a>
+        <nav class="nav">
+          <a href="/concept.html">Concept</a>
+          <a href="/research-platform.html">Research Platform</a>
+          <a href="/hardware-architecture.html">Hardware</a>
+          <a href="/applications.html">Applications</a>
+          <a href="/research-notes/">Research Notes</a>
+          <a href="/status.html">Status</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Hardware Architecture (Concept)</h1>
+
+      <h2>Philosophy: roles, not products</h2>
+      <p>
+        Murosync explores a modular rack-mounted architecture designed to support multiple system roles built on a common platform.
+        The goal is experimental flexibility and architecture validation.
+      </p>
+
+      <h2>Role configurations</h2>
+      <ul>
+        <li><strong>Timing master role</strong>: global reference distribution over optical links</li>
+        <li><strong>Timing distribution / repeater role</strong>: scalable cascaded timing topologies</li>
+        <li><strong>Trigger generation role</strong>: deterministic trigger outputs with scheduled timing</li>
+        <li><strong>Combined experimental role</strong>: integrated configuration for laboratory validation</li>
+      </ul>
+
+      <h2>Conceptual form factor</h2>
+      <p>
+        A 2U 19" rack device concept (“network-switch-like” ergonomics), optimized for dense optical I/O and optional trigger I/O.
+      </p>
+
+      <div class="note">
+        <div class="meta">
+          <strong>Disclaimer:</strong> Conceptual renders for architectural illustration only. Not a commercial product.
+        </div>
+      </div>
+
+      <h2>PCB zoning (concept)</h2>
+      <ul>
+        <li>optical I/O region</li>
+        <li>trigger I/O region</li>
+        <li>timing core region</li>
+        <li>power domains / isolation</li>
+        <li>airflow-aware layout philosophy</li>
+      </ul>
+
+      <div class="footer">
+        Future: conceptual renders and a simple zoning diagram will live on this page.
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

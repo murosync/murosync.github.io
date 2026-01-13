@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Phase alignment under asymmetric delay — Murosync</title>
+  <meta name="description" content="Experimental note: asymmetric delay and phase alignment behavior." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="header">
+      <div class="brand">
+        <a class="logo" href="/">Murosync</a>
+        <nav class="nav">
+          <a href="/concept.html">Concept</a>
+          <a href="/research-platform.html">Research Platform</a>
+          <a href="/hardware-architecture.html">Hardware</a>
+          <a href="/applications.html">Applications</a>
+          <a href="/research-notes/">Research Notes</a>
+          <a href="/status.html">Status</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main">
+      <h1>Phase alignment under asymmetric delay</h1>
+      <div class="meta">Jan 2025 · Status: experimental · Tags: phase, delay, measurement</div>
+
+      <div class="hr"></div>
+
+      <h2>1. Context</h2>
+      <p>
+        This note investigates the effect of asymmetric delay on phase alignment accuracy in distributed FPGA-based timing systems.
+      </p>
+
+      <h2>2. Experimental setup</h2>
+      <p>
+        Point-to-point optical link with configurable asymmetry (or controlled path differences),
+        measured at the system level.
+      </p>
+
+      <h2>3. Method / measurement</h2>
+      <p>
+        Phase is measured using a DDMTD-based approach as a baseline reference.
+        Logging focuses on repeatability, drift, and residual phase error under varying asymmetry.
+      </p>
+
+      <h2>4. Results</h2>
+      <p>
+        Observed phase error increases with uncompensated asymmetry beyond a practical threshold.
+        (Quantitative results to be added once the measurement sweep is finalized.)
+      </p>
+
+      <h2>5. Observations / interpretation</h2>
+      <p>
+        Asymmetry introduces a system-level bias that cannot be corrected by phase alignment alone.
+        This motivates explicit asymmetry measurement and compensation, or a model that accounts for it.
+      </p>
+
+      <h2>6. Next questions</h2>
+      <ul>
+        <li>Can asymmetry be detected without explicit round-trip measurement?</li>
+        <li>How does this scale in cascaded or meshed topologies?</li>
+        <li>What is the stability limit over time and temperature?</li>
+      </ul>
+
+      <div class="footer">
+        These notes document an ongoing research effort; details may evolve as experiments continue.
+      </div>
+    </main>
+
+  </div>
+</body>
+</html>

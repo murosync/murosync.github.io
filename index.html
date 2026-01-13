@@ -1,86 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MuroSync — Sub-Nanosecond Optical Synchronization System</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background: #f4f4f4;
-            color: #222;
-        }
-        header {
-            background: #111;
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        .subtitle {
-            margin-top: 10px;
-            font-size: 20px;
-            opacity: 0.8;
-        }
-        section {
-            max-width: 900px;
-            margin: 40px auto;
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.1);
-        }
-        h2 {
-            margin-top: 0;
-        }
-        footer {
-            text-align: center;
-            padding: 30px;
-            margin-top: 40px;
-            color: #666;
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Murosync</title>
+  <meta name="description" content="Research-driven project on distributed timing and phase synchronization." />
+  <link rel="stylesheet" href="/assets/css/style.css" />
 </head>
-
 <body>
-<header>
-    <h1>MuroSync</h1>
-    <div class="subtitle">High-precision sub-nanosecond synchronization system</div>
-</header>
+  <div class="wrap">
 
-<section>
-    <h2>About MuroSync</h2>
-    <p>
-        MuroSync is a high-precision timing and synchronization platform engineered for
-        distributed scientific and industrial systems. It delivers deterministic
-        sub-nanosecond timing over optical links, enabling reliable synchronization across
-        multiple remote nodes.
-    </p>
+    <header class="header">
+      <div class="brand">
+        <a class="logo" href="/">Murosync</a>
+        <nav class="nav">
+          <a href="/concept.html">Concept</a>
+          <a href="/research-platform.html">Research Platform</a>
+          <a href="/hardware-architecture.html">Hardware</a>
+          <a href="/applications.html">Applications</a>
+          <a href="/research-notes/">Research Notes</a>
+          <a href="/status.html">Status</a>
+          <a href="/about.html">About</a>
+        </nav>
+      </div>
+    </header>
 
-    <h2>Key Features</h2>
-    <ul>
-        <li>Sub-nanosecond timing resolution</li>
-        <li>Automatic delay calibration and phase alignment better than 100 ps</li>
-        <li>Optical timing distribution over fiber for long-distance, low-jitter operation</li>
-        <li>FPGA-based modular architecture</li>
-        <li>Low-latency event and trigger distribution</li>
-    </ul>
+    <main class="main">
+      <h1>Distributed timing and phase synchronization for complex systems.</h1>
+      <p class="lead">
+        Murosync is a research-driven engineering project exploring deterministic timing, phase alignment,
+        and trigger coordination across physically distributed hardware systems.
+      </p>
 
-    <h2>Contact</h2>
-    <p>
-        For inquiries or collaboration:<br />
-        <b>info@murosync.com</b>
-    </p>
-</section>
+      <div class="hr"></div>
 
-<footer>
-    © 2025 MuroSync. All rights reserved.
-</footer>
+      <p>
+        In complex distributed systems, timing errors rarely appear as simple offsets. They emerge as phase drift,
+        correlation loss, unstable triggering, and irreproducible behavior — often only visible at full system scale.
+      </p>
 
+      <h2>Focus areas</h2>
+      <ul>
+        <li>Delay measurement and compensation (including asymmetry)</li>
+        <li>Phase alignment and coherence across distributed nodes</li>
+        <li>Deterministic trigger scheduling and distribution</li>
+        <li>Measurement-driven system architecture exploration</li>
+      </ul>
+
+      <div class="note">
+        <div class="meta"><strong>Thesis:</strong> Timing is not infrastructure — it is a system parameter.</div>
+      </div>
+
+      <p class="small">
+        Start here: <a href="/concept.html">Concept</a> · <a href="/research-notes/">Research Notes</a>
+      </p>
+
+      <div class="footer">
+        This site documents an ongoing research effort.
+      </div>
+    </main>
+
+  </div>
 </body>
 </html>
